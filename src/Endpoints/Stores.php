@@ -39,7 +39,14 @@ class Stores extends BaseEndpoint
      */
     public function listStores($showInactive = false, $marketplaceId = '')
     {
-        return $this->get('', ['query' => compact('showInactive', 'marketplaceId')]);
+        $params = array();
+        if($showInactive != false)
+            $params['showInactive'] = $showInactive;
+        }
+        if($marketplaceId != ''){
+            $params['marketplaceId'] = $marketplaceId;
+        }
+        return $this->get('', ['query' => $params]);
     }
 
     /**
