@@ -40,7 +40,7 @@ class Stores extends BaseEndpoint
     public function listStores($showInactive = false, $marketplaceId = '')
     {
         $params = array();
-        if($showInactive != false)
+        if($showInactive != false){
             $params['showInactive'] = $showInactive;
         }
         if($marketplaceId != ''){
