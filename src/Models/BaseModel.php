@@ -56,6 +56,12 @@ abstract class BaseModel implements ArrayAccess, Arrayable
             if (is_object($value) && $value instanceof Arrayable) {
                 $object[$key] = $value->toArray();
             }
+            
+            if (is_array($value)) {
+                $object[$key] = array_map(static function ($item) {
+                    return is_object($item) && $item instanceof Arrayable ? $item->toArray() : $item;
+                }, $value);
+            }
         }
 
         return $object;
