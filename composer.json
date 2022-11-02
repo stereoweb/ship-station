@@ -1,22 +1,16 @@
 {
-    "name": "zack6849/ship-station",
+    "name": "stereo/ship-station",
     "description": "An updated and maintained PHP Wrapper for ShipStation's rest api, forked from michaelb/ship-station, docs @ https://shipstation.docs.apiary.io/",
     "type": "library",
-    "homepage": "https://github.com/zack6849/ship-station/",
+    "homepage": "https://github.com/stereoweb/ship-station/",
     "keywords": ["ship", "shipping", "ship-station", "shipstation", "api", "wrapper"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Zachary Craig",
-            "email": "zack@zack6849.com",
-            "homepage": "https://zack6849.com",
+            "name": "Stereo",
+            "email": "david@stereo.ca",
+            "homepage": "https://www.stereo.ca",
             "role": "maintainer"
-        },
-        {
-            "name": "Michael Bonds",
-            "email": "mbonds1219@gmail.com",
-            "homepage": "http://michaelbonds.com",
-            "role": "author"
         }
     ],
     "autoload": {
